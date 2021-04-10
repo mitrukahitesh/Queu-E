@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Queu-E</string>
+    <string name="request_token">Request Token</string>
+    <string name="logInWithGoogle">Log In With Google</string>
+    <string name="verify">Verify Phone Number</string>
+    <string name="phone">+917900000000</string>
+    <string name="otp">Enter Verification Code</string>
+    <string name="your_num">Token</string>
+    <string name="current_num">Status</string>
+    <string name="no_token">No active token</string>
+    <string name="timing">Timing:</string>
+    <string name="days_open">Days Open:</string>
+    <string name="visit_for">Visit for:</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="sign_out">Sign out</string>
+    <string name="contact_us">Contact Us</string>
+</resources>

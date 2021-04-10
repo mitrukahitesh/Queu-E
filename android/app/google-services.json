@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87151010338",
+    "project_id": "queu-e",
+    "storage_bucket": "queu-e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87151010338:android:8024bad27d9fd25c35607b",
+        "android_client_info": {
+          "package_name": "com.example.queu_e"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87151010338-3t5kc6ba0qd8dcev8om98fvaibjn8pj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVb3IfJNSCvnhPh5II9v7rQAHogFVI3gQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87151010338-3t5kc6ba0qd8dcev8om98fvaibjn8pj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
