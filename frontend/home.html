@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Icon  -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="icon" href="q.png" type="image/png" sizes="32x32">
+    <title>Queu-E</title>
+  </head>
+  <body>
+  	<div class="jumbotron-fluid">
+  		<!-- Navbar -->
+	    <nav class="navbar navbar-expand-sm navbar-light d-block" id="navbar" style="background-color: #011D30;">
+	        <div class="container">
+	            <a href="home.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
+	            <button class="navbar-toggler" data-toggle="collapse" data-target="#thetarget">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+
+	            <div class="collapse navbar-collapse justify-content-end" id="thetarget">
+	                <ul class="navbar-nav ml-auto">
+	                    <li class="nav-item">
+	                        <a href="home.html" class="nav-link">Home</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a href="sector.html" class="nav-link">Sectors</a>
+	                    </li>
+	                    <!-- <li class="nav-item dropdown nav-title">
+	                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sectors</a>
+	                        <div class="dropdown-menu nav-title-drop">
+                                <ul style="list-style-type: none;" class="pt-2">
+                                  <li><a href="" style="padding-left: 0 !important">Banking Sector</a></li>
+                                  <li><a href="" style="padding-left: 0 !important">Pilgrimage</a></li>
+                                  <li><a href="" style="padding-left: 0 !important">Education Administration</a></li>
+                                  <li><a href="" style="padding-left: 0 !important">Healthcare</a></li>
+                                  <li><a href="" style="padding-left: 0 !important">Bill Payment Stores</a></li>
+                                </ul>
+	                        </div>
+	                    </li> -->
+	                    <li class="nav-item">
+	                        <a href="about.html" class="nav-link">About Us</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a href="contact.html" class="nav-link">Contact</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a href="login.html" class="nav-link">Login</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <!-- Navbar Ends -->
+
+	    <!-- slider -->
+		<div id="demo" class="carousel slide pb-5" data-ride="carousel">
+
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      	<div>
+			        <img class="d-block w-100 img-fluid img-responsive card-img" src="banking.jpg" alt="Banking Sector">
+			        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-end mx-4">
+			            <div class="container my-3 bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
+			                <span class="title pt-md-5">Banking Sector</span>
+			                <p>To avoid gathering around for bank activities, e-tokens can be issued accordingly.</p>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		     	<div>
+			        <img class="d-block w-100 img-fluid img-responsive card-img" src="pilgrimage.jpg" alt="Pilgrimage Sector">
+			        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-end mx-4">
+			            <div class="container my-3 bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
+			                <span class="title pt-md-5">Pilgrimage</span>
+			                <p>To avoid huge gathering of devotees, e-tokens can be issued to limit the number of devotees visiting religious places at a certain time.</p>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		     	<div>
+			        <img class="d-block w-100 img-fluid img-responsive card-img" src="education.jpg" alt="Education Administration Sector">
+			        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-end mx-4">
+			            <div class="container my-3 bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
+			                <span class="title pt-md-5">Education Administration</span>
+			                <p>To avoid huge gathering of students for any educational activities such as admission, query etc, e-tokens can be issued to limit the number of visitors.</p>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		      	<div>
+			        <img class="d-block w-100 img-fluid img-responsive card-img" src="health.jpg" alt="Health Sector">
+			        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-end mx-4">
+			            <div class="container my-3 bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
+			                <span class="title pt-md-5">Healthcare Sector</span>
+			                <p>To avoid spreading of infections in huge mass present in the hospital, e-token can be provided to manaage the queue of patients</p>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		      	<div>
+			        <img class="d-block w-100 img-fluid img-responsive card-img" src="government.jpg" alt="Government Sector">
+			        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-end mx-4">
+			            <div class="container my-3 bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
+			                <span class="title pt-md-5">Government Administration</span>
+			                <p>To avoid huge crowd of people in government offices, e-token can be issued to assign the timing for the required work in government offices.</p>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+		<!-- slider ends -->
+
+		<!-- About -->
+		<div class="container pt-5 pb-5" id="about">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>What do we do?</h1>
+					<p class="pt-2">Queu-E is an initiative to make regular life happen while following Covid-19 safety precautions. It is the same thing of tokens but all what is replaced is a paper with your mobile while escaping the fuss of standing in a queue! So whether the place is bank, temple, health clinic or education centers , get your token number within seconds without any worries. No need to count each second and save those anxiety attacks when a person around you sneezes. <br><br>
+					Organizations can register with few simple steps and anyone can get the token for the registered organizations on the ‘Queu-E’ app just by logging in via e-mail or mobile number.
+					</p>
+					<a href="" class="pt-2"><button class="btn btn-large">Register</button></a>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<img src="about.jpg" class="img-fluid img-responsive w-100" style="border-radius: 20px;">
+				</div>
+			</div>
+		</div>
+		<!-- About ends -->
+
+		<!-- App Info -->
+		<div class="container-fluid" style="background-color: #C9DEE5;">
+			<div class="container pt-5 pb-5" id="app">
+				<div class="row">
+					<div class="col-md-5">
+						<img src="about.jpg" class="img-fluid img-responsive w-100" style="border-radius: 20px;">
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-6">
+						<h1>Send Token Request</h1>
+						<p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="" class="pt-2"><button class="btn btn-large"><i class="fas fa-download"></i>&nbsp; Download App</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- App Info ends -->
+		<!-- Testimonials -->
+		<div class="container pt-5 pb-5" id="testimonials">
+			<h1 class="text-center pb-4">What Do People Say About Us</h1>
+			<div id="demo1" class="carousel slide" data-ride="carousel">
+
+			  <!-- Indicators -->
+			  <ul class="carousel-indicators">
+			    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo1" data-slide-to="1"></li>
+			    <li data-target="#demo1" data-slide-to="2"></li>
+			  </ul>
+			  
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      	<div>
+				        <img class="d-block w-100 img-fluid img-responsive card-img" src="testimonials.jpg">
+				        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-center">
+				            <div class="carousel-caption">
+				            	<img src="profile.jpg" style="height: 150px!important; width: 150px; border-radius: 50%;">
+			                    <div id="image-caption" class="pb-3">Nick Doe</div>
+			                    <p class="text-white pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. </p> 
+			                </div>
+				        </div>
+				    </div>
+			    </div>
+			    <div class="carousel-item">
+			      	<div>
+				        <img class="d-block w-100 img-fluid img-responsive card-img" src="testimonials.jpg">
+				        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-center">
+				            <div class="carousel-caption">
+				            	<img src="profile.jpg" style="height: 150px!important; width: 150px; border-radius: 50%;">
+			                    <div id="image-caption" class="pb-3">Harry James</div>
+			                    <p class="text-white pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p> 
+			                </div>
+				        </div>
+				    </div>
+			    </div>
+			    <div class="carousel-item">
+			      	<div>
+				        <img class="d-block w-100 img-fluid img-responsive card-img" src="testimonials.jpg">
+				        <div class="container-fluid card-img-overlay d-flex flex-column justify-content-center">
+				            <div class="carousel-caption">
+				            	<img src="profile.jpg" style="height: 150px!important; width: 150px; border-radius: 50%;">
+			                    <div id="image-caption" class="pb-3">John Williams</div>
+			                    <p class="text-white pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p> 
+			                </div>
+				        </div>
+				    </div>
+			    </div>
+			  </div>
+			  
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo1" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
+			</div>
+		</div>
+		<!-- Testimonial ends -->
+
+		<!-- Footer -->
+		<div class="footer pt-4">
+		    <div class="container">
+		        <div class="row pt-2">
+		            <div class="col-md-4 pt-2" id="connect">
+		            	<a href="home.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
+		                <h2 class="pt-4 pb-2">Connect with us</h2>
+		                <ul style="list-style-type: none;">
+		                	<li class="pr-3"><a href=""><i class="fab fa-facebook"></i></a></li>
+		                	<li class="pr-3"><a href=""><i class="fab fa-instagram"></i></a></li>
+		                	<li class="pr-3"><a href=""><i class="fab fa-linkedin"></i></a></li>
+		                	<li class="pr-3"><a href=""><i class="fab fa-twitter"></i></a></li>
+		                </ul>
+		            </div>
+		            <div class="col-md-4" id="links">
+		                <h2 class="pt-4 pb-2">Quick Links</h2><hr>
+		                <ul style="list-style-type: none;">
+		                	<li class="pr-3"><a href="">Sectors</a></li>
+		                	<li class="pr-3"><a href="">About Us</a></li>
+		                	<li class="pr-3"><a href="">Contact</a></li>
+		                	<li class="pr-3"><a href="">FAQ</a></li>
+		                	<li class="pr-3"><a href="">Testimonials</a></li>
+		                </ul>
+		            </div>
+		            <div class="col-md-4" id="address">
+		                <h2 class="pt-4 pb-1">Address</h2><hr>
+		                <ul style="list-style-type: none;">
+		                	<li class="pb-2">
+		                		<div class="row">
+		                			<div class="col-2">
+		                				<i class="fas fa-map-marker-alt"></i>
+		                			</div>
+		                			<div class="col-10">
+		                				<p>Motilal Nehru National Institute of Technology</p>
+		                			</div>
+		                		</div>
+		                	</li>
+		                	<li class="pb-3">
+		                		<div class="row">
+		                			<div class="col-2">
+		                				<i class="fas fa-phone"></i>
+		                			</div>
+		                			<div class="col-10">
+		                				<p>+91-9874563210</p>
+		                			</div>
+		                		</div>
+		                	</li>
+		                	<li>
+		                		<div class="row">
+		                			<div class="col-2">
+		                				<i class="fas fa-envelope"></i>
+		                			</div>
+		                			<div class="col-10">
+		                				<p>shrutimayank1202@gmail.com</p>
+		                			</div>
+		                		</div>
+		                	</li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!-- Footer ends -->
+	</div>
+	
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+	        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+	        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="icon" href="q.png" type="image/png" sizes="32x32">
+    <title>Queu-E</title>
+
+    <style type="text/css">
+      label, input[type="submit"]{
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+      }
+      .col-lg-6 input #login:hover{
+        background-color: #f0f0f0;
+        color: #255B8A;
+      }
+      input{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+      }
+      .col-lg-6 a button, .col-lg-6 button{
+        font-family: 'Oswald', sans-serif;
+        background-color: #255B8A;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 18px;
+      }
+
+      .col-lg-6 a button:hover, .col-lg-6 button:hover{
+        background-color: #f0f0f0;
+        color: #00374E;
+        padding: 9px 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Banner Start -->
+        <div class="col-lg-5" style="background-color: #011D30; color: #fff; height: 100vh; padding-top: 140px; padding-left: 90px; padding-bottom: 180px;">
+
+          <a href="home.html" class="nav-link pb-5 pl-md-5 ml-md-5"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-sticky-note" style="font-size: 30px;"></i>
+            </div>
+            <div class="col-10">
+              <h5>Paperless coupon system</h5>
+            </div> 
+          </div>
+          <div class="row pt-5 mt-4">
+            <div class="col-2">
+              <i class="fas fa-user" style="font-size: 30px;"></i>
+            </div>
+            <div class="col-10">
+              <h5>No more waiting in the queue.</h5>
+            </div> 
+          </div>
+          <div class="row pt-5 mt-4">
+            <div class="col-2">
+              <i class="fas fa-mobile-alt" style="font-size: 30px;"></i>
+            </div>
+            <div class="col-10">
+              <h5>Get current token status on phone</h5>
+            </div> 
+          </div>
+        </div>
+        <!-- Banner End -->
+        <div class="col-lg-1"></div>
+        <!-- Login Start -->
+        <div class="col-lg-6 mt-2">
+          <h1 style="font-family: 'Oswald', sans-serif; font-size: 40px; color: #255B8A;" class="pl-5 ml-2 pt-md-5 mt-md-5">Login</h1>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-7 mt-3">
+              <label>Organization Email</label>
+              <input type="text" placeholder="Enter organization's Email" class="form-control"><br>
+              <label>Password</label>
+              <input type="password" placeholder="Enter Password" class="form-control"><br>
+              <!-- <input type="submit" name="login" value="Login" id="login" class="p-2 px-4" style="background-color: #255B8A; color: #fff; border: 0px!important;"> -->
+              <button class="btn btn-large px-4 p-2" type="submit">Login</button>
+            </div>
+            <div class="col-4"></div>
+          </div>
+          <h1 style="font-family: 'Oswald', sans-serif; font-size: 18px; color: #011D30;" class="pl-5 ml-3 pt-4">Don't have an account?</h1>
+          <a href="signup.html" class="pl-5 ml-3 pt-2"><button class="btn btn-large px-4 p-2">Register</button></a>
+        </div>
+        <!-- Login End -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
