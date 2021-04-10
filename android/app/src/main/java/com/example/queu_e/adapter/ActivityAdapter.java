@@ -249,7 +249,7 @@ public class ActivityAdapter extends RecyclerView.Adapter<ActivityAdapter.Custom
                                                             public void onComplete(@NonNull Task<Void> task) {
                                                                 dialog.stopDialog();
                                                                 if (task.isSuccessful()) {
-                                                                    Toast.makeText(context, "Received Token No. " + response.body().getValue(), Toast.LENGTH_LONG).show();
+                                                                    Toast.makeText(context, "Your token number is " + response.body().getValue() + "\nYou can check status on home screen", Toast.LENGTH_LONG).show();
                                                                 } else {
                                                                     Toast.makeText(context, "Something went wrong", Toast.LENGTH_LONG).show();
                                                                 }
@@ -303,7 +303,7 @@ public class ActivityAdapter extends RecyclerView.Adapter<ActivityAdapter.Custom
                                     public void onComplete(@NonNull Task<Void> task) {
                                         dialog.stopDialog();
                                         if (task.isSuccessful()) {
-                                            Toast.makeText(context, "Received Token No. " + response.body().getValue(), Toast.LENGTH_LONG).show();
+                                            Toast.makeText(context, "Your token number is " + response.body().getValue() + "\nYou can check status on home screen", Toast.LENGTH_LONG).show();
                                         } else {
                                             Toast.makeText(context, "Something went wrong", Toast.LENGTH_LONG).show();
                                         }
