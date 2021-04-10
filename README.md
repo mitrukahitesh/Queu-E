@@ -19,7 +19,7 @@ Organizations can register with few simple steps and anyone can get the token fo
     8. Bootstrap
 
 # Contributors:
-Team Name: Noob Machas
+### Team Name: Noob Machas
     1. Hitesh Mitruka
     2. Shruti Mayank
     3. Shruti Varshney
