@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"queue/src/route/organization"
 	"queue/src/route/token"
+	"queue/src/route/verify"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
@@ -21,6 +22,11 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		organization.HandleOrgReq(w, r, function, id)
 	case "token":
 		token.HandleTokenReq(w, r, function, id, name)
+	case "verify":
+		email := query.Get("email")
+		otp := query.Get("otp")
+		pass := query.Get("password")
+		verify.HandleVerifyRequest(w, r, function, email, pass, otp)
 	default:
 		w.Write([]byte("Hello, Client!"))
 	}

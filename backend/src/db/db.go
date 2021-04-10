@@ -19,6 +19,8 @@ const (
 	COUNTER = "counter"
 	CURRENT = "current"
 	END     = "endtime"
+	OTP     = "otp"
+	PASS    = "passwords"
 )
 
 func GetMongoClient() (*mongo.Client, error) {
