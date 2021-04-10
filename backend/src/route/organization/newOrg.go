@@ -26,7 +26,7 @@ func NewOrg(task model.Organization) error {
 	//ADD TO COUNTER
 	collection = client.Database(db.DB).Collection(db.COUNTER)
 	obj := bson.D{primitive.E{Key: "org", Value: res.InsertedID}}
-	res, err = collection.InsertOne(context.TODO(), obj)
+	_, err = collection.InsertOne(context.TODO(), obj)
 	if err != nil {
 		return err
 	}
@@ -34,7 +34,7 @@ func NewOrg(task model.Organization) error {
 	//ADD TO CURRENT STATUS
 	collection = client.Database(db.DB).Collection(db.CURRENT)
 	obj = bson.D{primitive.E{Key: "org", Value: res.InsertedID}}
-	res, err = collection.InsertOne(context.TODO(), obj)
+	_, err = collection.InsertOne(context.TODO(), obj)
 	if err != nil {
 		return err
 	}
@@ -42,6 +42,6 @@ func NewOrg(task model.Organization) error {
 	//ADD TO END TIME
 	collection = client.Database(db.DB).Collection(db.END)
 	obj = bson.D{primitive.E{Key: "org", Value: res.InsertedID}}
-	res, err = collection.InsertOne(context.TODO(), obj)
+	_, err = collection.InsertOne(context.TODO(), obj)
 	return err
 }
