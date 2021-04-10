@@ -1,6 +1,6 @@
 # Queu-E
 
-![Built At](http://bit.ly/BuiltAtHack36)
+<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
 
 # Introduction:
 
@@ -18,9 +18,17 @@ Organizations can register with few simple steps via our web interface and can u
     7. CSS
     8. Bootstrap
 
+# Presentation
+    [Link](https://drive.google.com/drive/folders/1VmNdn6Ms96IMz6EHqNcL5_9fnRdso2wG?usp=sharing)
+
+# Demo Video
+
 # Contributors:
 ### Team Name: Noob Machas
     1. Hitesh Mitruka
     2. Shruti Mayank
     3. Shruti Varshney
     4. Prashant Singh
+
+### Made at
+<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
