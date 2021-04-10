@@ -11,11 +11,11 @@ import (
 
 func GetById(id string) ([]model.Organization, error) {
 	orgs := []model.Organization{}
-	obj, err := primitive.ObjectIDFromHex(id)
-	if err != nil {
-		return orgs, err
-	}
-	filter := bson.D{primitive.E{Key: "_id", Value: obj}}
+	//obj, err := primitive.ObjectIDFromHex(id)
+	// if err != nil {
+	// 	return orgs, err
+	// }
+	filter := bson.D{primitive.E{Key: "email", Value: id}}
 	client, err := db.GetMongoClient()
 	if err != nil {
 		return orgs, err

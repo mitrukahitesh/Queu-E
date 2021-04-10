@@ -16,14 +16,14 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	function := query.Get("function")
 	id := query.Get("id")
 	name := query.Get("name")
+	email := query.Get("email")
 
 	switch resource {
 	case "org":
-		organization.HandleOrgReq(w, r, function, id)
+		organization.HandleOrgReq(w, r, function, id, email)
 	case "token":
 		token.HandleTokenReq(w, r, function, id, name)
 	case "verify":
-		email := query.Get("email")
 		otp := query.Get("otp")
 		pass := query.Get("password")
 		verify.HandleVerifyRequest(w, r, function, email, pass, otp)

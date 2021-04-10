@@ -101,14 +101,14 @@ func addActivity(w http.ResponseWriter, r *http.Request, id string) {
 	}
 }
 
-func HandleOrgReq(w http.ResponseWriter, r *http.Request, function string, id string) {
+func HandleOrgReq(w http.ResponseWriter, r *http.Request, function string, id string, email string) {
 	switch function {
 	case "NewOrg":
 		newOrg(w, r)
 	case "GetAll":
 		getAll(w, r)
 	case "GetById":
-		getById(w, r, id)
+		getById(w, r, email)
 	case "AddActivity":
 		addActivity(w, r, id)
 	default:
