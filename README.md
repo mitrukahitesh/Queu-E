@@ -19,7 +19,7 @@ Organizations can register with few simple steps via our web interface and can u
     8. Bootstrap
 
 # Presentation
-    [Link](https://drive.google.com/drive/folders/1VmNdn6Ms96IMz6EHqNcL5_9fnRdso2wG?usp=sharing)
+    <a href="https://drive.google.com/drive/folders/1VmNdn6Ms96IMz6EHqNcL5_9fnRdso2wG?usp=sharing">Link</a>
 
 # Demo Video
 
