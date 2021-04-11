@@ -24,13 +24,34 @@
 
     <link rel="icon" href="q.png" type="image/png" sizes="32x32">
     <title>Queu-E</title>
+
+    <style type="text/css">
+    	#data button{
+		  font-family: 'Oswald', sans-serif;
+		  background-color: #00374E;
+		  color: #fff;
+		  text-decoration: none;
+		  font-size: 18px;
+		  padding: 10px 18px;
+		}
+
+		#data button:hover{
+		  background-color: #f0f0f0;
+		  color: #00374E;
+		  padding: 9px 17px;
+		}
+		#data label{
+			font-family: 'Roboto', sans-serif;
+			font-size: 20px;
+		}
+    </style>
   </head>
   <body>
   	<div class="jumbotron-fluid">
   		<!-- Navbar -->
 	    <nav class="navbar navbar-expand-sm navbar-light d-block" id="navbar" style="background-color: #011D30;">
 	        <div class="container">
-	            <a href="home.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
+	            <a href="index.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
 	            <button class="navbar-toggler" data-toggle="collapse" data-target="#thetarget">
 	                <span class="navbar-toggler-icon"></span>
 	            </button>
@@ -38,7 +59,7 @@
 	            <div class="collapse navbar-collapse justify-content-end" id="thetarget">
 	                <ul class="navbar-nav ml-auto">
 	                    <li class="nav-item">
-	                        <a href="home.html" class="nav-link">Home</a>
+	                        <a href="index.html" class="nav-link">Home</a>
 	                    </li>
 	                    <li class="nav-item">
 	                        <a href="sector.html" class="nav-link">Sectors</a>
@@ -62,7 +83,7 @@
 	                        <a href="contact.html" class="nav-link">Contact</a>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a href="login.html" class="nav-link">Login</a>
+	                        <a href="counter.html" class="nav-link">Token Counter</a>
 	                    </li>
 	                </ul>
 	            </div>
@@ -70,84 +91,45 @@
 	    </nav>
 	    <!-- Navbar Ends -->
 
-	    <!-- contact List -->
-	    <div class="jumbotron-fluid" id="contactpg">
-	    	<div class="card">
-	            <img class="d-block w-100 img-fluid img-responsive card-img" src="contact.jpg" style="height: 400px; opacity: 0.9;">
-	            <div class="mx-md-5 card-img-overlay d-flex flex-column justify-content-end mx-4">
-	                <div class="container bannertext" style="border-left: 50px solid #57869C; background-color: #011D30; opacity: 0.8; display: block;">
-		                <span class="title pt-md-5">Contact</span>
-		                <ul class="breadcrumb">
-		                	<li class="d-inline-block"><a href="home.html">Home</a></li>
-							<li class="d-inline-block">&nbsp;/&nbsp;Contact</li>
-		                </ul>
-		            </div>
-	            </div>
-	        </div>
-	        <div class="container pt-5 pb-5">
-	        	<div class="row">
-	        		<div class="col-md-8">
-	        			<p style="font-family: 'Roboto',sans-serif; font-size: 18px;">Drop down your queries below we will try to resolve them soon.</p>
-				        <div class="container p-4" style="font-family: times new roman;">
-				          <input type="text" class="form-control" placeholder="Name" style="border: 0px; font-size: 20px;"><hr>
-				          <input type="text" class="form-control" placeholder="Email" style="border: 0px; font-size: 20px;"><hr>
-				          <input type="text"  class="form-control" placeholder="Phone" style="border: 0px; font-size: 20px;"><hr>
-				          <textarea placeholder="Message" class="form-control flex-column" cols="80" rows="4" style="border: 0px; font-size: 20px;"></textarea><hr>
-				          <button type="submit" class="btn btn-large pt-2" style="font-size: 20px;">Send</button>
-				        </div>
-	        		</div>
-	        		<div class="col-md-4 pt-5" style="background-color: #011D30;">
-	        			<ul style="list-style-type: none;">
-		                	<li class="pb-1">
-		                		<div class="row">
-		                			<div class="col-2">
-		                				<i class="fas fa-map-marker-alt"></i>
-		                			</div>
-		                			<div class="col-10">
-		                				<p>Motilal Nehru National Institute of Technology</p>
-		                			</div>
-		                		</div>
-		                	</li>
-		                	<li class="pb-4">
-		                		<div class="row">
-		                			<div class="col-2">
-		                				<i class="fas fa-phone"></i>
-		                			</div>
-		                			<div class="col-10">
-		                				<p>+91-9874563210</p>
-		                			</div>
-		                		</div>
-		                	</li>
-		                	<li>
-		                		<div class="row">
-		                			<div class="col-2">
-		                				<i class="fas fa-envelope"></i>
-		                			</div>
-		                			<div class="col-10">
-		                				<p>shrutimayank1202@gmail.com</p>
-		                			</div>
-		                		</div>
-		                	</li>
-		                </ul>
-		                <h3 class="pt-5 pb-3" style="color: #fff; font-family: 'Oswald', sans-serif;">You can also connect us here</h3>
-		                <ul style="list-style-type: none;" id="social">
-		                	<li class="pr-4 pl-4"><a href=""><i class="fab fa-facebook"></i></a></li>
-		                	<li class="pr-4"><a href=""><i class="fab fa-instagram"></i></a></li>
-		                	<li class="pr-4"><a href=""><i class="fab fa-linkedin"></i></a></li>
-		                	<li class=""><a href=""><i class="fab fa-twitter"></i></a></li>
-		                </ul>
-	        		</div>
-	        	</div>
-	        </div>
+	    <!-- Content -->
+	    <div class="jumbotron-fluid pt-5 pb-5">
+	    	<div class="jumbotron-fluid" id="verify_email" style="background-color: #BBCAD7;">
+	    		<div class="container">
+	    			<h1 style="font-family: 'Oswald', sans-serif;">Please Verify your Email</h1>
+	    			<button onclick="send_verification()" class="btn btn-large p-2 px-4" id="verify_btn">Verify Email</button>
+	    		</div>
+	    	</div>
+	    	<div class="container" id="data">
+	    		<h1 style="font-family: 'Oswald', sans-serif;" class="pb-2">Available Week Days</h1>
+	    		<label><input type="checkbox" value="Sunday">&nbsp;&nbsp;Sunday</label><br><br>	   
+	    		<label><input type="checkbox" value="Monday">&nbsp;&nbsp;Monday</label><br>	<br>    
+	    		<label><input type="checkbox" value="Tuesday">&nbsp;&nbsp;Tuesday</label><br><br>	    
+	    		<label><input type="checkbox" value="Wednesday">&nbsp;&nbsp;Wednesday</label><br><br>	    
+	    		<label><input type="checkbox" value="Thursday">&nbsp;&nbsp;Thursday</label><br><br>	    
+	    		<label><input type="checkbox" value="Friday">&nbsp;&nbsp;Friday</label><br><br>	    
+	    		<label><input type="checkbox" value="Saturday">&nbsp;&nbsp;Saturday</label><br> <br>
+	    		<h1 style="font-family: 'Oswald', sans-serif;">Available Time</h1> 
+	    		<div class="row pt-2">
+	    			<div class="col-md-6">
+	    				<input type="text" placeholder="Starting Time (HH:MM)" class="form-control"><br>
+	    			</div>
+	    			<div class="col-md-6">
+	    				<input type="text" placeholder="Ending Time (HH:MM)" class="form-control"><br>
+	    			</div>
+	    		</div> 
+	    		<h1 style="font-family: 'Oswald', sans-serif;">Purpose</h1> 
+	    		<input type="text" placeholder="Enter purpose of Activity" class="form-control"><br>
+				<button class="btn btn-large p-2 px-4">Submit</button>
+	    	</div>
 	    </div>
-	    <!-- contact List Ends -->
+	    <!-- Content ends -->
 
 		<!-- Footer -->
 		<div class="footer pt-4">
 		    <div class="container">
 		        <div class="row pt-2">
 		            <div class="col-md-4 pt-2" id="connect">
-		            	<a href="home.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
+		            	<a href="index.html" class="nav-link"><img src="queue.png" class="img-fluid" width="150" height="150"/></a>
 		                <h2 class="pt-4 pb-2">Connect with us</h2>
 		                <ul style="list-style-type: none;">
 		                	<li class="pr-3"><a href=""><i class="fab fa-facebook"></i></a></li>
@@ -220,5 +202,32 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
 	        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDwSkwoVAWY-XFNIGRpJqiujNMJ255Xoos",
+      authDomain: "queu-e.firebaseapp.com",
+      databaseURL: "https://queu-e-default-rtdb.firebaseio.com",
+      projectId: "queu-e",
+      storageBucket: "queu-e.appspot.com",
+      messagingSenderId: "87151010338",
+      appId: "1:87151010338:web:64538a7ab1b6ccb935607b",
+      measurementId: "G-THCY2CM4P1"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
